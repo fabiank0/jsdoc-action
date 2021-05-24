@@ -2,7 +2,7 @@ name: 'JSDoc Action'
 description: 'GitHub Action to build JSDoc documentation'
 author: 'André Storhaug'
 branding:
-  icon: 'file-text'  
+  icon: 'file-text'
   color: 'yellow'
 inputs:
   source_dir:
@@ -30,5 +30,5 @@ inputs:
     description: 'The path to a Markdown file to be used as a the front page'
     required: false
 runs:
-  using: 'node12'
+  using: 'node14'
   main: 'src/index.js'
