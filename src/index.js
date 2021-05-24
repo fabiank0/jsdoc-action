@@ -64,7 +64,8 @@ async function run() {
       args.push('-c', configPath);
     }
     if (template) {
-      const templatePath = path.join(__dirname, '../node_modules/', templateName, template_dir);
+      // const templatePath = path.join(__dirname, '../node_modules/', templateName, template_dir);
+      const templatePath = path.join(__dirname, '../node_modules/better-docs/publish.js');
       args.push('-t', templatePath);
     }
     if (front_page) {
